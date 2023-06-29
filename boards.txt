@@ -1,0 +1,233 @@
+menu.UploadSpeed=Upload Speed
+menu.USBMode=USB Mode
+menu.CDCOnBoot=USB CDC On Boot
+menu.MSCOnBoot=USB Firmware MSC On Boot
+menu.DFUOnBoot=USB DFU On Boot
+menu.UploadMode=Upload Mode
+menu.CPUFreq=CPU Frequency
+menu.FlashFreq=Flash Frequency
+menu.FlashMode=Flash Mode
+menu.FlashSize=Flash Size
+menu.PartitionScheme=Partition Scheme
+menu.DebugLevel=Core Debug Level
+menu.PSRAM=PSRAM
+menu.Revision=Board Revision
+menu.LORAWAN_REGION=LoRaWan Region
+menu.LoRaWanDebugLevel=LoRaWan Debug Level
+menu.LoopCore=Arduino Runs On
+menu.EventsCore=Events Run On
+menu.MemoryType=Memory Type
+menu.EraseFlash=Erase All Flash Before Sketch Upload
+
+##############################################################
+### DO NOT PUT BOARDS ABOVE THE OFFICIAL ESPRESSIF BOARDS! ###
+##############################################################
+
+malkon_esp32s3.name=ESP32S3 Malkon Two
+malkon_esp32s3.vid.0=0x303a
+malkon_esp32s3.pid.0=0x1001
+
+malkon_esp32s3.bootloader.tool=esptool_py
+malkon_esp32s3.bootloader.tool.default=esptool_py
+
+malkon_esp32s3.upload.tool=esptool_py
+malkon_esp32s3.upload.tool.default=esptool_py
+malkon_esp32s3.upload.tool.network=esp_ota
+
+malkon_esp32s3.upload.maximum_size=1310720
+malkon_esp32s3.upload.maximum_data_size=327680
+malkon_esp32s3.upload.flags=
+malkon_esp32s3.upload.extra_flags=
+malkon_esp32s3.upload.use_1200bps_touch=false
+malkon_esp32s3.upload.wait_for_upload_port=false
+
+malkon_esp32s3.serial.disableDTR=false
+malkon_esp32s3.serial.disableRTS=false
+
+malkon_esp32s3.build.tarch=xtensa
+malkon_esp32s3.build.bootloader_addr=0x0
+malkon_esp32s3.build.target=esp32s3
+malkon_esp32s3.build.mcu=esp32s3
+malkon_esp32s3.build.core=esp32
+malkon_esp32s3.build.variant=malkon_esp32s3
+malkon_esp32s3.build.board=ESP32S3_DEV
+
+malkon_esp32s3.build.usb_mode=1
+malkon_esp32s3.build.cdc_on_boot=0
+malkon_esp32s3.build.msc_on_boot=0
+malkon_esp32s3.build.dfu_on_boot=0
+malkon_esp32s3.build.f_cpu=240000000L
+malkon_esp32s3.build.flash_size=4MB
+malkon_esp32s3.build.flash_freq=80m
+malkon_esp32s3.build.flash_mode=dio
+malkon_esp32s3.build.boot=qio
+malkon_esp32s3.build.boot_freq=80m
+malkon_esp32s3.build.partitions=default
+malkon_esp32s3.build.defines=
+malkon_esp32s3.build.loop_core=
+malkon_esp32s3.build.event_core=
+malkon_esp32s3.build.psram_type=qspi
+malkon_esp32s3.build.memory_type={build.boot}_{build.psram_type}
+
+malkon_esp32s3.menu.PSRAM.disabled=Disabled
+malkon_esp32s3.menu.PSRAM.disabled.build.defines=
+malkon_esp32s3.menu.PSRAM.disabled.build.psram_type=qspi
+malkon_esp32s3.menu.PSRAM.enabled=QSPI PSRAM
+malkon_esp32s3.menu.PSRAM.enabled.build.defines=-DBOARD_HAS_PSRAM
+malkon_esp32s3.menu.PSRAM.enabled.build.psram_type=qspi
+malkon_esp32s3.menu.PSRAM.opi=OPI PSRAM
+malkon_esp32s3.menu.PSRAM.opi.build.defines=-DBOARD_HAS_PSRAM
+malkon_esp32s3.menu.PSRAM.opi.build.psram_type=opi
+
+malkon_esp32s3.menu.FlashMode.qio=QIO 80MHz
+malkon_esp32s3.menu.FlashMode.qio.build.flash_mode=dio
+malkon_esp32s3.menu.FlashMode.qio.build.boot=qio
+malkon_esp32s3.menu.FlashMode.qio.build.boot_freq=80m
+malkon_esp32s3.menu.FlashMode.qio.build.flash_freq=80m
+malkon_esp32s3.menu.FlashMode.qio120=QIO 120MHz
+malkon_esp32s3.menu.FlashMode.qio120.build.flash_mode=dio
+malkon_esp32s3.menu.FlashMode.qio120.build.boot=qio
+malkon_esp32s3.menu.FlashMode.qio120.build.boot_freq=120m
+malkon_esp32s3.menu.FlashMode.qio120.build.flash_freq=80m
+malkon_esp32s3.menu.FlashMode.dio=DIO 80MHz
+malkon_esp32s3.menu.FlashMode.dio.build.flash_mode=dio
+malkon_esp32s3.menu.FlashMode.dio.build.boot=dio
+malkon_esp32s3.menu.FlashMode.dio.build.boot_freq=80m
+malkon_esp32s3.menu.FlashMode.dio.build.flash_freq=80m
+malkon_esp32s3.menu.FlashMode.opi=OPI 80MHz
+malkon_esp32s3.menu.FlashMode.opi.build.flash_mode=dout
+malkon_esp32s3.menu.FlashMode.opi.build.boot=opi
+malkon_esp32s3.menu.FlashMode.opi.build.boot_freq=80m
+malkon_esp32s3.menu.FlashMode.opi.build.flash_freq=80m
+
+malkon_esp32s3.menu.FlashSize.4M=4MB (32Mb)
+malkon_esp32s3.menu.FlashSize.4M.build.flash_size=4MB
+malkon_esp32s3.menu.FlashSize.8M=8MB (64Mb)
+malkon_esp32s3.menu.FlashSize.8M.build.flash_size=8MB
+malkon_esp32s3.menu.FlashSize.8M.build.partitions=default_8MB
+malkon_esp32s3.menu.FlashSize.16M=16MB (128Mb)
+malkon_esp32s3.menu.FlashSize.16M.build.flash_size=16MB
+#malkon_esp32s3.menu.FlashSize.32M=32MB (256Mb)
+#malkon_esp32s3.menu.FlashSize.32M.build.flash_size=32MB
+
+malkon_esp32s3.menu.LoopCore.1=Core 1
+malkon_esp32s3.menu.LoopCore.1.build.loop_core=-DARDUINO_RUNNING_CORE=1
+malkon_esp32s3.menu.LoopCore.0=Core 0
+malkon_esp32s3.menu.LoopCore.0.build.loop_core=-DARDUINO_RUNNING_CORE=0
+
+malkon_esp32s3.menu.EventsCore.1=Core 1
+malkon_esp32s3.menu.EventsCore.1.build.event_core=-DARDUINO_EVENT_RUNNING_CORE=1
+malkon_esp32s3.menu.EventsCore.0=Core 0
+malkon_esp32s3.menu.EventsCore.0.build.event_core=-DARDUINO_EVENT_RUNNING_CORE=0
+
+malkon_esp32s3.menu.USBMode.hwcdc=Hardware CDC and JTAG
+malkon_esp32s3.menu.USBMode.hwcdc.build.usb_mode=1
+malkon_esp32s3.menu.USBMode.default=USB-OTG (TinyUSB)
+malkon_esp32s3.menu.USBMode.default.build.usb_mode=0
+
+malkon_esp32s3.menu.CDCOnBoot.default=Disabled
+malkon_esp32s3.menu.CDCOnBoot.default.build.cdc_on_boot=0
+malkon_esp32s3.menu.CDCOnBoot.cdc=Enabled
+malkon_esp32s3.menu.CDCOnBoot.cdc.build.cdc_on_boot=1
+
+malkon_esp32s3.menu.MSCOnBoot.default=Disabled
+malkon_esp32s3.menu.MSCOnBoot.default.build.msc_on_boot=0
+malkon_esp32s3.menu.MSCOnBoot.msc=Enabled (Requires USB-OTG Mode)
+malkon_esp32s3.menu.MSCOnBoot.msc.build.msc_on_boot=1
+
+malkon_esp32s3.menu.DFUOnBoot.default=Disabled
+malkon_esp32s3.menu.DFUOnBoot.default.build.dfu_on_boot=0
+malkon_esp32s3.menu.DFUOnBoot.dfu=Enabled (Requires USB-OTG Mode)
+malkon_esp32s3.menu.DFUOnBoot.dfu.build.dfu_on_boot=1
+
+malkon_esp32s3.menu.UploadMode.default=UART0 / Hardware CDC
+malkon_esp32s3.menu.UploadMode.default.upload.use_1200bps_touch=false
+malkon_esp32s3.menu.UploadMode.default.upload.wait_for_upload_port=false
+malkon_esp32s3.menu.UploadMode.cdc=USB-OTG CDC (TinyUSB)
+malkon_esp32s3.menu.UploadMode.cdc.upload.use_1200bps_touch=true
+malkon_esp32s3.menu.UploadMode.cdc.upload.wait_for_upload_port=true
+
+malkon_esp32s3.menu.PartitionScheme.default=Default 4MB with spiffs (1.2MB APP/1.5MB SPIFFS)
+malkon_esp32s3.menu.PartitionScheme.default.build.partitions=default
+malkon_esp32s3.menu.PartitionScheme.defaultffat=Default 4MB with ffat (1.2MB APP/1.5MB FATFS)
+malkon_esp32s3.menu.PartitionScheme.defaultffat.build.partitions=default_ffat
+malkon_esp32s3.menu.PartitionScheme.default_8MB=8M with spiffs (3MB APP/1.5MB SPIFFS)
+malkon_esp32s3.menu.PartitionScheme.default_8MB.build.partitions=default_8MB
+malkon_esp32s3.menu.PartitionScheme.default_8MB.upload.maximum_size=3342336
+malkon_esp32s3.menu.PartitionScheme.minimal=Minimal (1.3MB APP/700KB SPIFFS)
+malkon_esp32s3.menu.PartitionScheme.minimal.build.partitions=minimal
+malkon_esp32s3.menu.PartitionScheme.no_ota=No OTA (2MB APP/2MB SPIFFS)
+malkon_esp32s3.menu.PartitionScheme.no_ota.build.partitions=no_ota
+malkon_esp32s3.menu.PartitionScheme.no_ota.upload.maximum_size=2097152
+malkon_esp32s3.menu.PartitionScheme.noota_3g=No OTA (1MB APP/3MB SPIFFS)
+malkon_esp32s3.menu.PartitionScheme.noota_3g.build.partitions=noota_3g
+malkon_esp32s3.menu.PartitionScheme.noota_3g.upload.maximum_size=1048576
+malkon_esp32s3.menu.PartitionScheme.noota_ffat=No OTA (2MB APP/2MB FATFS)
+malkon_esp32s3.menu.PartitionScheme.noota_ffat.build.partitions=noota_ffat
+malkon_esp32s3.menu.PartitionScheme.noota_ffat.upload.maximum_size=2097152
+malkon_esp32s3.menu.PartitionScheme.noota_3gffat=No OTA (1MB APP/3MB FATFS)
+malkon_esp32s3.menu.PartitionScheme.noota_3gffat.build.partitions=noota_3gffat
+malkon_esp32s3.menu.PartitionScheme.noota_3gffat.upload.maximum_size=1048576
+malkon_esp32s3.menu.PartitionScheme.huge_app=Huge APP (3MB No OTA/1MB SPIFFS)
+malkon_esp32s3.menu.PartitionScheme.huge_app.build.partitions=huge_app
+malkon_esp32s3.menu.PartitionScheme.huge_app.upload.maximum_size=3145728
+malkon_esp32s3.menu.PartitionScheme.min_spiffs=Minimal SPIFFS (1.9MB APP with OTA/190KB SPIFFS)
+malkon_esp32s3.menu.PartitionScheme.min_spiffs.build.partitions=min_spiffs
+malkon_esp32s3.menu.PartitionScheme.min_spiffs.upload.maximum_size=1966080
+malkon_esp32s3.menu.PartitionScheme.fatflash=16M Flash (2MB APP/12.5MB FATFS)
+malkon_esp32s3.menu.PartitionScheme.fatflash.build.partitions=ffat
+malkon_esp32s3.menu.PartitionScheme.fatflash.upload.maximum_size=2097152
+malkon_esp32s3.menu.PartitionScheme.app3M_fat9M_16MB=16M Flash (3MB APP/9.9MB FATFS)
+malkon_esp32s3.menu.PartitionScheme.app3M_fat9M_16MB.build.partitions=app3M_fat9M_16MB
+malkon_esp32s3.menu.PartitionScheme.app3M_fat9M_16MB.upload.maximum_size=3145728
+malkon_esp32s3.menu.PartitionScheme.rainmaker=RainMaker
+malkon_esp32s3.menu.PartitionScheme.rainmaker.build.partitions=rainmaker
+malkon_esp32s3.menu.PartitionScheme.rainmaker.upload.maximum_size=3145728
+
+malkon_esp32s3.menu.CPUFreq.240=240MHz (WiFi)
+malkon_esp32s3.menu.CPUFreq.240.build.f_cpu=240000000L
+malkon_esp32s3.menu.CPUFreq.160=160MHz (WiFi)
+malkon_esp32s3.menu.CPUFreq.160.build.f_cpu=160000000L
+malkon_esp32s3.menu.CPUFreq.80=80MHz (WiFi)
+malkon_esp32s3.menu.CPUFreq.80.build.f_cpu=80000000L
+malkon_esp32s3.menu.CPUFreq.40=40MHz
+malkon_esp32s3.menu.CPUFreq.40.build.f_cpu=40000000L
+malkon_esp32s3.menu.CPUFreq.20=20MHz
+malkon_esp32s3.menu.CPUFreq.20.build.f_cpu=20000000L
+malkon_esp32s3.menu.CPUFreq.10=10MHz
+malkon_esp32s3.menu.CPUFreq.10.build.f_cpu=10000000L
+
+malkon_esp32s3.menu.UploadSpeed.921600=921600
+malkon_esp32s3.menu.UploadSpeed.921600.upload.speed=921600
+malkon_esp32s3.menu.UploadSpeed.115200=115200
+malkon_esp32s3.menu.UploadSpeed.115200.upload.speed=115200
+malkon_esp32s3.menu.UploadSpeed.256000.windows=256000
+malkon_esp32s3.menu.UploadSpeed.256000.upload.speed=256000
+malkon_esp32s3.menu.UploadSpeed.230400.windows.upload.speed=256000
+malkon_esp32s3.menu.UploadSpeed.230400=230400
+malkon_esp32s3.menu.UploadSpeed.230400.upload.speed=230400
+malkon_esp32s3.menu.UploadSpeed.460800.linux=460800
+malkon_esp32s3.menu.UploadSpeed.460800.macosx=460800
+malkon_esp32s3.menu.UploadSpeed.460800.upload.speed=460800
+malkon_esp32s3.menu.UploadSpeed.512000.windows=512000
+malkon_esp32s3.menu.UploadSpeed.512000.upload.speed=512000
+
+malkon_esp32s3.menu.DebugLevel.none=None
+malkon_esp32s3.menu.DebugLevel.none.build.code_debug=0
+malkon_esp32s3.menu.DebugLevel.error=Error
+malkon_esp32s3.menu.DebugLevel.error.build.code_debug=1
+malkon_esp32s3.menu.DebugLevel.warn=Warn
+malkon_esp32s3.menu.DebugLevel.warn.build.code_debug=2
+malkon_esp32s3.menu.DebugLevel.info=Info
+malkon_esp32s3.menu.DebugLevel.info.build.code_debug=3
+malkon_esp32s3.menu.DebugLevel.debug=Debug
+malkon_esp32s3.menu.DebugLevel.debug.build.code_debug=4
+malkon_esp32s3.menu.DebugLevel.verbose=Verbose
+malkon_esp32s3.menu.DebugLevel.verbose.build.code_debug=5
+
+malkon_esp32s3.menu.EraseFlash.none=Disabled
+malkon_esp32s3.menu.EraseFlash.none.upload.erase_cmd=
+malkon_esp32s3.menu.EraseFlash.all=Enabled
+malkon_esp32s3.menu.EraseFlash.all.upload.erase_cmd=-e
+
+##############################################################
