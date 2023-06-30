@@ -1,16 +1,16 @@
 {
-  "name": "framework-arduinoespressif32",
+  "name": "esp32s3-malkon-two",
   "version": "1.0.0",
-  "description": "Arduino Wiring-based Framework for the Espressif ESP32, ESP32-S and ESP32-C series of SoCs",
+  "description": "Arduino IDE Board package for the Malkon Two, an ESP32S3-based board",
   "keywords": [
-    "framework",
-    "arduino",
+    "esp32s3",
     "malkon",
-    "esp32"
+    "custom"
   ],
-  "license": "LGPL-2.1-or-later",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/espressif/arduino-esp32"
+    "url": "https://github.com/schinqy/malkon"
   }
+ 
 }
