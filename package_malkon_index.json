@@ -14,10 +14,10 @@
           "architecture": "esp32",
           "version": "1.0.0",
           "category": "ESP32",
-          "url": "https://github.com/espressif/arduino-esp32/releases/download/2.0.6/esp32-2.0.6.zip",
-          "archiveFileName": "esp32-2.0.6.zip",
-          "checksum": "SHA-256:ea56d300404cc1b5bc15295f29790246b02025c493e0664a6d271164a602a351",
-          "size": "264579419",
+          "url": "https://www.dropbox.com/s/r8e8c80z3fx1yjn/malkon.zip?dl=1",
+          "archiveFileName": "malkon.zip",
+          "checksum": "SHA-256:9EFE4C806A7BF351BD2635914997035ED02526B6B3F7351751BA078A158066C6",
+          "size": "149389312",
           "help": {
             "online": ""
           },
