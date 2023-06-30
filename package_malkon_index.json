@@ -3,7 +3,7 @@
     {
       "name": "malkon",
       "maintainer": "Malkon Technologies",
-      "websiteURL": "https://github.com/espressif/arduino-esp32",
+      "websiteURL": "https://github.com/schinqy/malkon",
       "email": "malkontechnologies@gmail.com",
       "help": {
         "online": "http://malkon.cc"
