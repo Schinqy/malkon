@@ -17,14 +17,14 @@
           "url": "https://www.dropbox.com/s/r8e8c80z3fx1yjn/malkon.zip?dl=1",
           "archiveFileName": "malkon.zip",
           "checksum": "SHA-256:FBCD2B0980394AF9D3D251B59B498DEF84CE3D18142070C0BB5A8EE3FAE528F6",
-          "size": "149389312",
+          "size": "78610292",
           "help": {
             "online": ""
           },
           "boards": [
            
             {
-              "name": "ESP32 Malkon Two Dev Board"
+              "name": "ESP32S3 Malkon Two Dev Board"
             }
           ],
           "toolsDependencies": [
